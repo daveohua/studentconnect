@@ -1,3 +1,9 @@
+## Editor's note
+
+This is the project I developed for my A Level Computer Science Non-Exam Assessment in 2023. It was my first end to end project and gave me a good introduction to Flask and SQL databases. I also implemented passwordless login using JWT tokens and an SMTP client, which in hindsight is a cool feature to add at a relatively beginner level. 
+
+It has been unmaintained since I first wrote it, and is very rough around the edges. It has no testing, has no static typing and only uses a sqlite database. Nevertheless, it's good to reflect on past work so I've left it up here.
+
 # StudentConnect
 
 StudentConnect is a web app that allows students to:
@@ -7,8 +13,6 @@ StudentConnect is a web app that allows students to:
 - Control who sees their timetable
 
 It uses Flask as a web framework, Jinja to generate webpages and emails and JWT to generate authentication tokens.
-
-This was my first full Python project. I learned how to use objects and modules to my advantage, and I was able to learn how to use the Flask framework on top of integrating different packages to achieve my goals. In the future I plan onccleaning up the code and adding full documentation, then I will plan and write formal tests. The database and objects are modelled on the idiosyncrasies of my former college, so I will likely iron those out to bring attention to the more important techniques I have developed writing this programme.
 
 ## How to run (testing only)
 
