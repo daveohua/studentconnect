@@ -2,7 +2,7 @@
 
 This is the project I developed for my A Level Computer Science Non-Exam Assessment in 2023. It was my first end to end project and gave me a good introduction to Flask and SQL databases. I also implemented passwordless login using JWT tokens and an SMTP client, which in hindsight is a cool feature to add at a relatively beginner level. 
 
-It has been unmaintained since I first wrote it, and is very rough around the edges. It has no testing, has no static typing and only uses a sqlite database. It also has no CI/CD process -- if I wanted to productionise it I would probably create a Dockerfile for it. Nevertheless, it's good to reflect on past work so I've left it up here.
+It has been mostly unmaintained since I first wrote it, and is very rough around the edges. It has no testing, has no static typing and only uses a sqlite database. Nevertheless, it's good to reflect on past work so I've left it up here and make occasional tweaks to make sure it is in a runnable state.
 
 # StudentConnect
 
@@ -14,9 +14,23 @@ StudentConnect is a web app that allows students to:
 
 It uses Flask as a web framework, Jinja to generate webpages and emails and JWT to generate authentication tokens.
 
-## How to run (testing only)
+## How to run
 
-1. Set up a virtual environment with flask and PyJWT installed.
-2. Run flask --app studentconnect init-db in the root of the project, to initialise the database.
-3. Run flask --app studentconnect run in the root of the project, to run the app locally.
+1. Set up and activate a virtual environment. I like to use UV but any method is fine.
+```bash
+uv venv
+source .venv/bin/activate
+```
+2. Install the project as editable. This will also install its dependencies.
+```bash
+uv pip install -e .
+```
+3. Initialise the database.
+```bash
+uv run flask --app studentconnect init-db
+```
+4. Run the app in a development server.
+```bash
+uv run flask --app studentconnect run
+```
 
