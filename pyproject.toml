@@ -4,7 +4,8 @@ version = "1.0.0"
 description = "A web app allowing the comparison of student timetables."
 dependencies = [
 	"flask",
-	"PyJWT",
+	"PyJWT<2.10",
+	"python-dotenv"
 ]
 
 [build-system]
