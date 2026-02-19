@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
 from . import db, auth, timetable, settings, trusted_users, stats
 
 def create_app(test_config=None):
@@ -30,5 +30,9 @@ def create_app(test_config=None):
     app.register_blueprint(settings.bp)
     app.register_blueprint(trusted_users.bp)
     app.register_blueprint(stats.bp)
+
+    @app.route("/")
+    def redirect_register():
+        return redirect(url_for('auth.register'))
 
     return app
