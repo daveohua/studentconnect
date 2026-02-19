@@ -2,7 +2,7 @@
 
 This is the project I developed for my A Level Computer Science Non-Exam Assessment in 2023. It was my first end to end project and gave me a good introduction to Flask and SQL databases. I also implemented passwordless login using JWT tokens and an SMTP client, which in hindsight is a cool feature to add at a relatively beginner level. 
 
-It has been unmaintained since I first wrote it, and is very rough around the edges. It has no testing, has no static typing and only uses a sqlite database. Nevertheless, it's good to reflect on past work so I've left it up here.
+It has been unmaintained since I first wrote it, and is very rough around the edges. It has no testing, has no static typing and only uses a sqlite database. It also has no CI/CD process -- if I wanted to productionise it I would probably create a Dockerfile for it. Nevertheless, it's good to reflect on past work so I've left it up here.
 
 # StudentConnect
 
